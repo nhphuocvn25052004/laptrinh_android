@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/ivMusic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/todoo"
+        android:src="@drawable/nutmusic"
+        android:layout_alignTop="@+id/ivStop"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtSinger"
+        android:layout_alignLeft="@+id/txtSinger"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="11dp"
+        android:text="Song Name"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20dp"
+        tools:ignore="RtlHardcoded" />
+
+
+    <TextView
+        android:id="@+id/txtSinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivMusic"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toEndOf="@+id/ivMusic"
+        android:layout_toRightOf="@+id/ivMusic"
+        android:text="Singer"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18dp" />
+    <ImageView
+        android:id="@+id/ivPlay"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/nutplay"
+        android:layout_toLeftOf="@+id/ivStop"/>
+    <ImageView
+        android:id="@+id/ivStop"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/nutstop"
+        android:layout_alignParentRight="true"/>
+
+
+
+</RelativeLayout>
